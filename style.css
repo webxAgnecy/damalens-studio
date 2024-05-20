@@ -85,6 +85,7 @@ h4 {
   font-family: "Open Sans", sans-serif;
   letter-spacing: -8px;
 }
+
 .navbar .nav-logo a img {
   width: 80px;
 }
@@ -132,12 +133,12 @@ h4 {
   flex-direction: column;
   justify-content: center;
 }
+
 @media (max-width: 500px) {
   .header {
     min-height: 60vh;
   }
 }
-
 .header .container {
   display: flex;
   flex-direction: column;
@@ -168,13 +169,13 @@ h4 {
   color: #fff;
   padding-bottom: 2rem;
 }
+
 @media (max-width: 992px) {
   .header .container .card h2 {
     font-size: 50px;
     margin-top: 19px;
   }
 }
-
 .header .container .card h2 span {
   color: #f7b324;
   display: block;
@@ -289,14 +290,14 @@ section .items {
   height: -moz-fit-content;
   height: fit-content;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 @media (max-width: 500px) {
   .about .items .item .image img {
     max-height: 400px;
   }
 }
-
 .about .items .item h1 {
   font-size: 55px;
   line-height: 66px;
@@ -317,13 +318,16 @@ section .items {
   padding: 1rem 1rem;
   color: #4e87bc;
 }
+
 .about .items .item .desc p:first-of-type {
   margin-right: auto;
   margin-left: unset;
 }
+
 .about .items .item .desc p b {
   font-size: 55px;
 }
+
 .about .items .item .desc p span {
   font-size: 55px;
   color: #f0b016;
@@ -451,20 +455,31 @@ section .heading {
   gap: 4rem 1rem;
   flex-wrap: wrap;
 }
+
 .work .items .item {
   max-width: 425px;
   border: none;
   background-color: transparent;
   padding: 0 !important;
   text-align: left;
+  cursor: unset !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100%;
 }
+
 .work .items .item:not(.title) {
   cursor: pointer;
 }
 
+.items.owl-carousel.team-carousel.owl-loaded.owl-drag {
+  padding: 0 !important;
+}
+
 .work .items .item .image {
   width: 100%;
-  height: 520px;
+  height: 420px;
   overflow: hidden;
   position: relative;
 }
@@ -483,7 +498,7 @@ section .heading {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .work .items .item .card {
@@ -492,33 +507,37 @@ section .heading {
   width: 100%;
   padding: 2rem;
   margin-top: -30%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  top: -100px;
 }
 
 .work .items .item:nth-child(1) .card {
   width: 100%;
-  padding: 2rem;
+  padding: 10px;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.work .items .item:nth-child(1) .card h1 {
-  color: #222;
-}
 
 .work .items .item .card h1 {
-  font-size: 28px;
+  font-size: 25px;
+  font-weight: bold;
   line-height: 38px;
   font-weight: 500;
-  color: #fff;
+  color: #fff !important;
+  width: 100%;
 }
 
 .work .items .item .card p {
-  font-size: 16px;
+  cursor: none;
+  width: 100%;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #aaa;
-  padding-top: 0.75rem;
 }
 
 .contact {
@@ -726,7 +745,7 @@ section .heading {
 
 .footer a {
   font-family: 500;
-  color: #f0b016;
+  color: #f0b016 !important;
 }
 
 #bars {
@@ -841,6 +860,20 @@ section .heading {
   flex-direction: unset;
 }
 
+.service-box {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-weight: bold;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.service-box img {
+  width: 200px;
+}
+
 .card__bx {
   --dark-color: #fff;
   --dark-alt-color: #777777;
@@ -862,6 +895,7 @@ section .heading {
   max-width: 22rem !important;
   transition: all 0.3s ease;
 }
+
 .card__bx:hover {
   transform: translatey(-10px);
 }
@@ -936,8 +970,6 @@ section .heading {
 }
 
 .slider img {
-  width: 200px;
-  height: 200px;
   animation: scroll 60s linear infinite;
 }
 
@@ -971,12 +1003,15 @@ section .heading {
   padding: 50px 0;
   color: #ffffff;
 }
+
 .contact_section h2 {
   font-weight: bold;
 }
+
 .contact_section form {
   padding-right: 35px;
 }
+
 .contact_section textarea,
 .contact_section input {
   width: 100%;
@@ -989,19 +1024,28 @@ section .heading {
   color: #101010;
   border-radius: 15px;
 }
+
+.contact_section textarea::-moz-placeholder,
+.contact_section input::-moz-placeholder {
+  color: #131313;
+}
+
 .contact_section textarea::-moz-placeholder, .contact_section input::-moz-placeholder {
   color: #131313;
 }
+
 .contact_section textarea::placeholder,
 .contact_section input::placeholder {
   color: #131313;
 }
+
 .contact_section textarea.message-box,
 .contact_section input.message-box {
   height: 120px;
   border-radius: 15px;
   padding: 20px;
 }
+
 .contact_section button {
   padding: 15px 65px;
   outline: none;
@@ -1013,12 +1057,15 @@ section .heading {
   margin-top: 15px;
   font-size: 15px;
 }
+
 .contact_section .img-box {
   position: relative;
 }
+
 .contact_section .img-box img {
   width: 100%;
 }
+
 .contact_section .img-box .img_overlay {
   position: absolute;
   width: 70%;
@@ -1032,12 +1079,15 @@ section .heading {
   justify-content: center;
   align-items: center;
 }
+
 .contact_section .img-box .img_overlay h2 {
+  color: white;
   text-transform: uppercase;
   font-size: 2.5rem;
   margin-bottom: 25px;
   font-weight: 500;
 }
+
 .contact_section .img-box .img_overlay a {
   color: #ffffff;
   font-size: 18px;
@@ -1084,6 +1134,7 @@ section .heading {
   gap: 30px;
   justify-content: center;
 }
+
 .footer-socials a {
   font-size: 32px !important;
 }
@@ -1173,15 +1224,18 @@ article.card {
   overflow: hidden;
   text-align: center;
 }
+
 article.card .thumb {
   height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 article.card .thumb img {
   width: 160px;
 }
+
 article.card .infos {
   width: auto;
   height: 350px;
@@ -1190,6 +1244,7 @@ article.card .infos {
   background: #fff;
   transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
+
 article.card .infos .title {
   position: relative;
   margin: 10px 0;
@@ -1198,6 +1253,7 @@ article.card .infos .title {
   font-size: 1.3rem;
   text-shadow: 0 0 0px #32577f;
 }
+
 article.card .infos .flag {
   position: absolute;
   top: 50%;
@@ -1209,13 +1265,16 @@ article.card .infos .flag {
   background-size: 100% auto;
   display: inline-block;
 }
-article.card .infos .date, article.card .infos .seats {
+
+article.card .infos .date,
+article.card .infos .seats {
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 0.85rem;
   color: rgba(21, 37, 54, 0.7);
   font-family: "Grotesque", sans-serif;
 }
+
 article.card .infos .seats {
   display: inline-block;
   margin-bottom: 24px;
@@ -1224,6 +1283,7 @@ article.card .infos .seats {
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
+
 article.card .infos .txt {
   font-family: "Merriweather", sans-serif;
   line-height: 2;
@@ -1232,6 +1292,7 @@ article.card .infos .txt {
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
+
 article.card .infos .details {
   position: absolute;
   left: 50%;
@@ -1249,11 +1310,15 @@ article.card .infos .details {
   opacity: 0;
   transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
 }
+
 article.card:hover .infos {
   transform: translateY(-260px);
   padding-top: 17px;
 }
-article.card:hover .infos .seats, article.card:hover .infos .txt, article.card:hover .infos .details {
+
+article.card:hover .infos .seats,
+article.card:hover .infos .txt,
+article.card:hover .infos .details {
   opacity: 1;
 }
 
@@ -1261,4 +1326,57 @@ video {
   height: 500px;
   margin: auto;
   width: 100%;
+} 
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card {
+  transition: 0.3s;
+  box-shadow: hsla(240, 5%, 41%, 0.2) 0px 7px 29px 0px;
+}
+.team-card .decs {
+  padding: 10px;
+  padding-top: 0;
+}
+.team-card img {
+  transition: 0.4s;
+  margin-bottom: 10px;
+  max-width: 240px;
+}
+.team-card:hover {
+  transform: scale(1.01);
+  transform: translatey(-10px);
+}
+
+.owl-prev, .owl-next {
+  width: 15px;
+  height: 100px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  display: block !important;
+  border: 0px solid black;
+  color: white !important;
+  width: 45px;
+  height: 46px;
+  font-size: 81px !important;
+  line-height: 0px !important;
+}
+
+.owl-prev {
+  left: -10px;
+}
+
+.owl-next {
+  right: -10px;
+}
+
+.owl-prev i, .owl-next i {
+  transform: scale(2, 5);
+  color: #ccc;
 }/*# sourceMappingURL=style.css.map */

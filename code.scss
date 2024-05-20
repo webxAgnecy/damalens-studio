@@ -1,0 +1,232 @@
+* {
+ letter-spacing: 0 !important ;
+}
+.section-header h2,
+.section-header__title {
+ font-size: 48px;
+ text-align: CENTER;
+}
+.section-header h2 {
+ font-weight: 600;
+}
+@media (max-width: 768px) {
+ .section-header h2,
+ .section-header__title {
+  font-size: 28px;
+ }
+}
+/*Change The Look of Grid promo on some pages*/
+#shopify-section-template--17102469234840__promo_grid_n9pfwP,
+#shopify-section-template--17102469660824__promo-grid,
+#shopify-section-template--17102469234840__promo-grid {
+ .promo-grid__content {
+  flex: 0 1 auto;
+  min-width: 200px;
+  padding: 2em 2.5em;
+  height: 100%;
+  z-index: 4;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: solid;
+  width: 96%;
+  max-height: 90%;
+ }
+ h2 {
+  font-size: 36px;
+ }
+ p {
+  font-size: 24px;
+ }
+ .type-banner__text {
+  padding: 33px;
+  padding-top: 40px;
+ }
+ .promo-grid__text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 30px 0;
+ }
+ .promo-grid__text .rte--em {
+  font-size: 33px;
+ }
+ .promo-grid__text {
+  max-width: 759px;
+  margin: auto;
+ }
+ .btn {
+  padding: 10px 20px;
+ }
+
+ @media (max-width: 768px) {
+  h2 {
+   font-size: 23px;
+  }
+  p {
+   font-size: 15px;
+  }
+  .promo-grid__text h2 {
+   font-size: 38px !important;
+   margin: 20px 0 !important;
+  }
+  .promo-grid__text .rte--em {
+   font-size: 16px !important;
+  }
+  .promo-grid__content {
+   padding: 2em 1.5em;
+  }
+  #SortBy {
+   font-size: 13px !important;
+  }
+ }
+}
+@media (max-width: 768px) {
+ #shopify-section-template--17102469234840__promo_grid_n9pfwP p {
+  margin: 10px 0;
+  margin-bottom: 20px;
+ }
+ .testimonials-section {
+  .section-header h2 {
+   font-size: 34px !important;
+  }
+ }
+ #shopify-section-template--17102469595288__promo_grid_U46BhF h2 {
+  margin: 13px 0;
+  font-weight: bold;
+ }
+ .feature-row h2 {
+  line-height: 30px !important;
+ }
+ .product-single__meta .rte {
+  font-size: 15px !important;
+ }
+ .collection-filter select {
+  border: solid 1px #a7a7a7;
+  color: #a7a7a7;
+  font-size: 12px !important;
+ }
+ .type-banner__text h2 {
+  font-size: 24px;
+ }
+ .type-banner__text p {
+  font-size: 15px;
+ }
+}
+.grid__image-ratio {
+ height: 341px;
+}
+.grid__image-ratio img {
+ object-fit: cover !important;
+ height: 341px !important;
+}
+
+.grid-product__price {
+ font-weight: bold;
+}
+.grid-product__title {
+ font-weight: bold;
+ font-size: 20px;
+ margin-bottom: 10px;
+}
+.collection-sidebar__group .collapsible-trigger-btn {
+ font-size: 16px;
+ font-weight: 600;
+ text-transform: capitalize;
+}
+.noUi-handle,
+.noUi-connect {
+ background: #d9d9d9;
+}
+.tag__checkbox {
+ padding-left: 17px;
+ position: relative;
+ border: solid #d9d9d9 1px;
+ margin-right: 5px;
+ border-radius: 3px;
+ padding: 10px;
+}
+.collection-filter select {
+ border: solid 1px #a7a7a7;
+ color: #a7a7a7;
+}
+@media (max-width: 768px) {
+ .grid__image-ratio img {
+  object-fit: cover !important;
+  height: 241px !important;
+ }
+ .grid__image-ratio {
+  height: 241px;
+ }
+ .grid-product__title {
+  font-size: 15px;
+  margin-bottom: 10px;
+ }
+}
+
+/* testimonials */
+.testimonials-section {
+ .section-header h2 {
+  font-size: 48px;
+  font-weight: bold;
+ }
+ .testimonial-image {
+  order: -3;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+ }
+ .testimonials-slider__text {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+ }
+ .testimonial-stars,
+ .testimonials-slider__text cite {
+  order: -1;
+ }
+ .testimonial-stars {
+  font-size: 25px;
+ }
+ p {
+  max-width: 400px;
+  margin: auto;
+ }
+}
+/* Testimonials Ends */
+@media only screen and (min-width: 1050px) {
+ .feature-row {
+  margin: 0 0% !important;
+ }
+ .feature-row h2 {
+  order: -1;
+  font-size: 30px !important;
+  font-weight: 900;
+ }
+}
+@media (max-width: 468px) {
+ #shopify-section-template--17102469595288__featured-collections
+  .small--one-half {
+  width: 100% !important;
+ }
+}
+
+@media (min-width: 992px) {
+    .eapps-google-maps-map-container {
+      width: 100%;
+      left: 0;
+    }
+    .eapps-google-maps-bar-container {
+      width: 100% !important;
+      height: 32% !important;
+    }
+    .eapps-google-maps-bar-list {
+      overflow: scroll;
+      width: 1991px;
+      display: flex;
+      height: 100%;
+      padding: 0 100px;
+    }
+    .eapps-google-maps-bar-list-item {
+      min-width: 430px;
+    }
+  }
