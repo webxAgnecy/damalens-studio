@@ -86,7 +86,8 @@ $(".brand-carousel").owlCarousel({
  loop: true,
  margin: 10,
  navigator: true,
- autoplay: false,
+ autoplay: true,
+ autoplayTimeout:3000, autoplaySpeed:3000,  autoplayHoverPause:true,
  dots: true,
  responsive: {
   0: {
