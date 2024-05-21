@@ -962,7 +962,6 @@ section .heading {
 }
 
 .slider img {
- animation: scroll 60s linear infinite;
 }
 
 .slide-track {
@@ -976,7 +975,6 @@ section .heading {
  min-height: unset;
  background-color: #fff;
  padding: 5em 2em;
- padding-top: 0;
 }
 
 @keyframes scroll {
